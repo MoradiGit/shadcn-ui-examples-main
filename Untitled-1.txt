@@ -1,0 +1,24 @@
+
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) {
+//   return (
+//     <html lang="en">
+//       <body className={`${GeistSans.variable} ${GeistMono.variable} font-sans`}>
+//        <AuthProvider>
+//         <ThemeProvider
+//           attribute="class"
+//           defaultTheme="system"
+//           enableSystem
+//           disableTransitionOnChange
+//         >
+//           {children}
+//         </ThemeProvider>
+//         </AuthProvider>
+
+//       </body>
+//     </html>
+//   );
+// }
