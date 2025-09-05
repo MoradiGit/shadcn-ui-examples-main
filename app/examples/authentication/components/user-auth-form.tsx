@@ -66,7 +66,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
                 dir="ltr"
               />
           </div>
-            {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
+            {error && <p dir="rtl" className="mt-2 text-sm text-red-600">{error}</p>}
           <Button disabled={isLoading}>
             {isLoading && (
               <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
