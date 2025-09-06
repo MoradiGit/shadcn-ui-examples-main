@@ -84,8 +84,11 @@
 html, body {
   direction: rtl;
   text-align: right;
-  font-size: 16px;
+  font-size: 14px;
 }
 .font-yekan {
   font-family: var(--font-yekan), sans-serif;
+}
+.font-vazir {
+  font-family: var(--font-vazir), sans-serif;
 }
