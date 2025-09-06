@@ -1,9 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+
+
 @layer base {
   :root {
+
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 
@@ -63,9 +66,12 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+    
   }
+
 }
- 
+
+
 @layer base {
   * {
     @apply border-border;
@@ -73,4 +79,13 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html, body {
+  direction: rtl;
+  text-align: right;
+  font-size: 16px;
+}
+.font-yekan {
+  font-family: var(--font-yekan), sans-serif;
 }
