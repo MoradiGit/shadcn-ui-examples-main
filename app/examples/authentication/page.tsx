@@ -47,16 +47,14 @@ export default function AuthenticationPage() {
             >
               <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
             </svg>
-            Acme Inc
+            DIKO Inc
           </div>
           <div className="relative z-20 mt-auto">
-            <blockquote className="space-y-2">
+            <blockquote className="space-y-2  text-right" dir="rtl">
               <p className="text-lg">
-                &ldquo;This library has saved me countless hours of work and
-                helped me deliver stunning designs to my clients faster than
-                ever before.&rdquo;
+                &ldquo;این کتابخانه ساعت‌های بی‌شماری از کار من را ذخیره کرده و به من کمک کرده تا طرح‌های خیره‌کننده‌ای برای مشتریانم سریع‌تر از همیشه تحویل دهم. ویژگی‌های بصری و عملکرد قوی آن، جریان کاری‌ام را ساده کرده و اجازه داده تا به جای مشکلات فنی، روی خلاقیت تمرکز کنم. به هر طراحی که می‌خواهد پروژه‌هایش را ارتقا دهد، این را شدیداً توصیه می کنم.&rdquo;
               </p>
-              <footer className="text-sm">Sofia Davis</footer>
+              <footer className="text-sm">احمد مرادی</footer>
             </blockquote>
           </div>
         </div>
