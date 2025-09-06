@@ -23,8 +23,11 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-
-    if (!validateIranianMobile(mobile)) {
+if(mobile.trim() === '')  {
+      setError('شماره موبایل نمی‌تواند خالی باشد');
+      return;
+    } 
+  else if (!validateIranianMobile(mobile) ) {
       setError('شماره موبایل معتبر نیست');
       return;
     }
@@ -46,8 +49,8 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
 
   return (
     <div className={cn("grid gap-6", className)} {...props}>
-      <form onSubmit={handleSubmit}>
-        <div className="grid gap-2">
+      <form onSubmit={handleSubmit} >
+        <div className="grid gap-2" >
           <div className="grid gap-1">
             <Label className="sr-only" htmlFor="mobileNumber">
               شماره موبایل
@@ -58,12 +61,10 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
                 name="mobile"
                 type="tel"
                 autoComplete="tel"
-                required
                 value={mobile}
                 onChange={(e) => setMobile(e.target.value)}
                 className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                placeholder="09923013139"
-                dir="ltr"
+                placeholder="09xxxxxxxxx"
               />
           </div>
             {error && <p dir="rtl" className="mt-2 text-sm text-red-600">{error}</p>}

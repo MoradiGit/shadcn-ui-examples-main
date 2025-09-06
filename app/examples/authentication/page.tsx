@@ -67,7 +67,7 @@ export default function AuthenticationPage() {
                 ورود به سامانه
               </h1>
               <p className="white text-sm text-muted-foreground">
-                اطلاعات را با دقت وارد کنید
+              لطفا شماره موبایل خود را وارد کنید
               </p>
             </div>
             <UserAuthForm />
